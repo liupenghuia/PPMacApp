@@ -14,6 +14,10 @@ public struct PPUIComponentView: View {
     public init(selection: String? = nil) {
         self.selection = selection
     }
+    
+    public static func hello() {
+        print("✅ PPUIComponentCore module loaded successfully!")
+    }
 
     public var body: some View {
         NavigationSplitView {

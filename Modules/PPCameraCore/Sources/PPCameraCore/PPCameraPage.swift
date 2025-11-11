@@ -12,11 +12,15 @@ public struct PPCameraPage: View {
     //必须要有初始化器声明为public
     public init() {}
     
+    public static func hello() {
+        print("✅ PPCameraCore module loaded successfully!")
+    }
+    
     public var body: some View {
         
         VStack {
             
-            Text("PPCameraPage Hello, World!")
+            
         }
         
     }

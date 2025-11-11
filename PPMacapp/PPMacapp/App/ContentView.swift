@@ -29,7 +29,7 @@ struct ContentView: View {
                 
                 Button("测试module") {
                     print("按钮被点击了！")
-                    PPCameraCore.hello()
+                    PPCameraPage.hello()
                 }
                 
                 
