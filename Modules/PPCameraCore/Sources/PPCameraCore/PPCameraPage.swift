@@ -6,22 +6,42 @@
 //
 
 import SwiftUI
+import AVFoundation
 
-@available(macOS 10.15, *)
 public struct PPCameraPage: View {
-    //必须要有初始化器声明为public
-    public init() {}
+    
+    
+    @State private var isRecording = false
+    @StateObject private var coordinator = CameraPreviewView.Coordinator()
+    
     
     public static func hello() {
         print("✅ PPCameraCore module loaded successfully!")
     }
     
+    public init() {}
+    
+    
     public var body: some View {
         
-        VStack {
+        VStack(spacing: 20) {
+            Text("摄像头预览").font(.headline)
+            CameraPreviewView(co: coordinator)
+                .frame(width: 400, height: 300)
+                .cornerRadius(12)
+                .shadow(radius: 4)
             
-            
+            Button(isRecording ? "停止录制" : "开始录制") {
+                            if isRecording {
+                                coordinator.stopRecording()
+                            } else {
+                                coordinator.startRecording()
+                            }
+                            isRecording.toggle()
+                        }
+                        .padding()
         }
         
     }
+    
 }
