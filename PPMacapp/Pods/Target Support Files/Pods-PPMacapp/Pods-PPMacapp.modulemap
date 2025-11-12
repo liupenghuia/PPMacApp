@@ -1,0 +1,6 @@
+framework module Pods_PPMacapp {
+  umbrella header "Pods-PPMacapp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+
+DEPENDENCIES:
+  - FlutterMacOS (from `./FlutterMacOS.podspec`)
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: "./FlutterMacOS.podspec"
+
+SPEC CHECKSUMS:
+  FlutterMacOS: 661a5c0224b9aef62c50f50a64992be8f647b92e
+
+PODFILE CHECKSUM: 53f03c9ba4cc1f0d18e7e20d277b2ea396eb839b
+
+COCOAPODS: 1.16.2
